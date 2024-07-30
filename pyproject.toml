@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "YouTube Video Downloader with Subtitles: A tool using yt-dlp for downloading YouTube videos in 1080p quality with embedded subtitles."
+version = "0.1.0"
+description = "A project to download YouTube videos in 1080p quality, merge audio and video, and embed subtitles using yt-dlp."
+authors = ["Teoman Selcuk <teomanege.selcuk@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+yt-dlp = "^2024.7.25"
+
+[tool.poetry.group.dev.dependencies]
+
+
+[tool.pyright]  # Configuration for the Pyright static type checker
+useLibraryCodeForTypes = true  # Use library code for type inference
+exclude = [".cache"]  # Exclude the ".cache" directory from type checking
+
+[build-system]  # Build system configuration
+requires = ["poetry-core>=1.0.0"]  # Required version of poetry-core
+build-backend = "poetry.core.masonry.api"  # Build backend for Poetry
+
+[[tool.poetry.packages]]
+include = "yt_vids" # Package configuration for the Aider_Project package

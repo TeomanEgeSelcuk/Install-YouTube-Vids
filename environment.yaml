@@ -1,0 +1,9 @@
+name: install_yt_vids_env
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - ffmpeg
+  - pip
+  - pip:
+      - poetry
